@@ -27,12 +27,6 @@ public class PersonaHijosModel implements TreeModel {
 	}
 
 	@Override
-	public boolean isLeaf(Object parent) {
-		// TODO Auto-generated method stub
-		return parent.nu;
-	}
-
-	@Override
 	public void valueForPathChanged(TreePath path, Object newValue) {
 		// TODO Auto-generated method stub
 		
@@ -54,6 +48,12 @@ public class PersonaHijosModel implements TreeModel {
 	public void removeTreeModelListener(TreeModelListener l) {
 		// TODO Auto-generated method stub
 		
+	}
+
+	@Override
+	public boolean isLeaf(Object node) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }
